@@ -157,216 +157,114 @@
       </div>
     </header>
 
-    <section class="product_section layout_padding">
-      <div class="container">
-        <!-- Breadcrumb -->
-        <div class="row mb-3">
-          <div class="col-12">
-            <nav aria-label="breadcrumb">
-              <ol class="breadcrumb">
-                <li class="breadcrumb-item">
-                  <a href="index.html">Trang chủ</a>
-                </li>
-                <li class="breadcrumb-item active" aria-current="page">
-                  Sản phẩm
-                </li>
-              </ol>
-            </nav>
-          </div>
+    <section class="product_detail_section py-5 px-20-custom">
+      <!-- Thông tin dự án chia 2 cột -->
+      <div class="row gx-2 mb-5">
+        <!-- Cột 1: Gói thầu -->
+        <div class="col-md-4">
+          <h3 class="fw-bold mb-3">
+            Nội dung tên Sản Phẩm 1 Nội dung tên Sản Phẩm 1 Nội dung tên Sản
+            Phẩm
+          </h3>
+          <p>Gói thầu</p>
         </div>
 
-        <div class="row">
-          <!-- Filter Menu on the Left -->
-          <div class="col-md-3 mb-4">
-            <hr
-              style="
-                border-top: 3.5px solid #fff200;
-                width: 20px;
-                margin: 10px 0;
-              "
+        <!-- Cột 2: Thời gian hoàn thành -->
+        <div class="col-md-3 d-flex flex-column justify-content-center">
+          <h3 class="mb-1 fw-bold" style="font-size: 1.25rem">DD/MM/YYYY</h3>
+          <p class="text-muted mb-0">Thời gian hoàn thành dự án</p>
+        </div>
+
+        <!-- Cột 3: Thông tin bảng -->
+        <div class="col-md-5">
+          <table class="table table-borderless mb-0">
+            <tbody>
+              <tr>
+                <th scope="row">Khách hàng</th>
+                <td>Công ty Cổ phần Thủy Đông</td>
+              </tr>
+              <tr>
+                <th scope="row">Loại hình dự án</th>
+                <td>Nội dung loại hình dự án</td>
+              </tr>
+              <tr>
+                <th scope="row">Địa điểm</th>
+                <td>TP.HCM</td>
+              </tr>
+              <tr>
+                <th scope="row">Trạng thái</th>
+                <td>Đang tiến hành</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Ảnh dự án -->
+      <div class="mb-5">
+        <h3 class="mb-3 fw-bold">ẢNH DỰ ÁN</h3>
+        <div class="row g-3">
+          <div class="col-md-4">
+            <img
+              src="assets/images/img_null.png"
+              class="img-fluid rounded shadow-sm"
+              alt="Ảnh 1"
             />
-            <h4>Danh Mục Sản Phẩm</h4>
-            <ul class="filters_menu list-group">
-              <li class="list-group-item active" data-filter="*">Tất cả</li>
-              <li class="list-group-item" data-filter=".dien">Sửa Điện</li>
-              <li class="list-group-item" data-filter=".nuoc">Sửa Nước</li>
-              <li class="list-group-item" data-filter=".maylanh">
-                Sửa Máy Lạnh
-              </li>
-              <li class="list-group-item" data-filter=".dientu">Sửa Điện Tử</li>
-            </ul>
           </div>
-
-          <!-- Product Grid on the Right -->
-          <div class="col-md-9">
-            <div class="filters-content">
-              <div class="row grid">
-                <div class="col-sm-6 col-lg-4 all dien">
-                  <a
-                    href="SanPham-detail.html"
-                    class="box text-decoration-none text-dark"
-                  >
-                    <div class="img-box">
-                      <img src="assets/images/img_null.png" alt="Sửa điện 1" />
-                    </div>
-                    <div class="detail-box">
-                      <h5>Sửa điện 1</h5>
-                      <p>
-                        Veniam debitis quaerat officiis quasi cupiditate quo...
-                      </p>
-                    </div>
-                  </a>
-                </div>
-                <div class="col-sm-6 col-lg-4 all nuoc">
-                  <a
-                    href="SanPham-detail.html"
-                    class="box text-decoration-none text-dark"
-                  >
-                    <div class="img-box">
-                      <img src="assets/images/img_null.png" alt="Sửa nước 1" />
-                    </div>
-                    <div class="detail-box">
-                      <h5>Sửa nước 1</h5>
-                      <p>
-                        Veniam debitis quaerat officiis quasi cupiditate quo...
-                      </p>
-                    </div>
-                  </a>
-                </div>
-                <div class="col-sm-6 col-lg-4 all maylanh">
-                  <a
-                    href="SanPham-detail.html"
-                    class="box text-decoration-none text-dark"
-                  >
-                    <div class="img-box">
-                      <img
-                        src="assets/images/img_null.png"
-                        alt="Sửa máy lạnh 1"
-                      />
-                    </div>
-                    <div class="detail-box">
-                      <h5>Sửa máy lạnh 1</h5>
-                      <p>
-                        Veniam debitis quaerat officiis quasi cupiditate quo...
-                      </p>
-                    </div>
-                  </a>
-                </div>
-                <div class="col-sm-6 col-lg-4 all dientu">
-                  <a
-                    href="SanPham-detail.html"
-                    class="box text-decoration-none text-dark"
-                  >
-                    <div class="img-box">
-                      <img
-                        src="assets/images/img_null.png"
-                        alt="Sửa điện tử 1"
-                      />
-                    </div>
-                    <div class="detail-box">
-                      <h5>Sửa điện tử 1</h5>
-                      <p>
-                        Veniam debitis quaerat officiis quasi cupiditate quo...
-                      </p>
-                    </div>
-                  </a>
-                </div>
-                <div class="col-sm-6 col-lg-4 all dien">
-                  <a
-                    href="SanPham-detail.html"
-                    class="box text-decoration-none text-dark"
-                  >
-                    <div class="img-box">
-                      <img src="assets/images/img_null.png" alt="Sửa điện 2" />
-                    </div>
-                    <div class="detail-box">
-                      <h5>Sửa điện 2</h5>
-                      <p>
-                        Veniam debitis quaerat officiis quasi cupiditate quo...
-                      </p>
-                    </div>
-                  </a>
-                </div>
-                <div class="col-sm-6 col-lg-4 all maylanh">
-                  <a
-                    href="SanPham-detail.html"
-                    class="box text-decoration-none text-dark"
-                  >
-                    <div class="img-box">
-                      <img
-                        src="assets/images/img_null.png"
-                        alt="Rửa máy lạnh 1"
-                      />
-                    </div>
-                    <div class="detail-box">
-                      <h5>Rửa máy lạnh 1</h5>
-                      <p>
-                        Veniam debitis quaerat officiis quasi cupiditate quo...
-                      </p>
-                    </div>
-                  </a>
-                </div>
-                <div class="col-sm-6 col-lg-4 all dientu">
-                  <a
-                    href="SanPham-detail.html"
-                    class="box text-decoration-none text-dark"
-                  >
-                    <div class="img-box">
-                      <img
-                        src="assets/images/img_null.png"
-                        alt="Thay điện tử 1"
-                      />
-                    </div>
-                    <div class="detail-box">
-                      <h5>Thay điện tử 1</h5>
-                      <p>
-                        Veniam debitis quaerat officiis quasi cupiditate quo...
-                      </p>
-                    </div>
-                  </a>
-                </div>
-                <div class="col-sm-6 col-lg-4 all nuoc">
-                  <a
-                    href="SanPham-detail.html"
-                    class="box text-decoration-none text-dark"
-                  >
-                    <div class="img-box">
-                      <img
-                        src="assets/images/img_null.png"
-                        alt="Lắp ống nước 1"
-                      />
-                    </div>
-                    <div class="detail-box">
-                      <h5>Lắp ống nước 1</h5>
-                      <p>
-                        Veniam debitis quaerat officiis quasi cupiditate quo...
-                      </p>
-                    </div>
-                  </a>
-                </div>
-                <div class="col-sm-6 col-lg-4 all dientu">
-                  <a
-                    href="SanPham-detail.html"
-                    class="box text-decoration-none text-dark"
-                  >
-                    <div class="img-box">
-                      <img
-                        src="assets/images/img_null.png"
-                        alt="Thay phụ kiện điện tử 1"
-                      />
-                    </div>
-                    <div class="detail-box">
-                      <h5>Thay phụ kiện điện tử 1</h5>
-                      <p>
-                        Veniam debitis quaerat officiis quasi cupiditate quo...
-                      </p>
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </div>
+          <div class="col-md-4">
+            <img
+              src="assets/images/img_null.png"
+              class="img-fluid rounded shadow-sm"
+              alt="Ảnh 2"
+            />
+          </div>
+          <div class="col-md-4">
+            <img
+              src="assets/images/img_null.png"
+              class="img-fluid rounded shadow-sm"
+              alt="Ảnh 3"
+            />
           </div>
         </div>
+      </div>
+
+      <!-- Các dự án liên quan -->
+      <div class="related-projects mt-5">
+        <h3 class="fw-bold mb-4">CÁC DỰ ÁN LIÊN QUAN</h3>
+        <table class="table table-borderless">
+          <thead class="border-bottom">
+            <tr>
+              <th>#</th>
+              <th>Tên dự án</th>
+              <th>Loại hình</th>
+              <th>Trạng thái</th>
+              <th>Năm</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>01/</td>
+              <td>Dự Án 1</td>
+              <td>Loại hình dự án 1</td>
+              <td>Đã hoàn thành</td>
+              <td>YYYY</td>
+            </tr>
+            <tr>
+              <td>02/</td>
+              <td>Dự Án 2</td>
+              <td>Loại hình dự án 2</td>
+              <td>Đã hoàn thành</td>
+              <td>YYYY</td>
+            </tr>
+            <tr>
+              <td>03/</td>
+              <td>Dự Án 3</td>
+              <td>Loại hình dự án 3</td>
+              <td>Đã hoàn thành</td>
+              <td>YYYY</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </section>
 
@@ -457,7 +355,7 @@
               <h4>Danh mục sản phẩm</h4>
 
               <div class="detail_link_box">
-                <a href="SanPham-detail.html">Sản Phẩm 1</a>
+                <a href="#">Sản Phẩm 1</a>
                 <a href="#">Sản Phẩm 2</a>
                 <a href="#">Sản Phẩm 3</a>
                 <a href="#">Sản Phẩm 4</a>

@@ -751,14 +751,15 @@ a:focus {
 }
 
 .product_section .filters_menu .list-group-item {
-  padding: 7px 20px;
+  padding: 10px 5px;
   cursor: pointer;
-  border-top: 1px solid #222831;
-  border-bottom: 1px solid #222831;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
   border-left: none;
   border-right: none;
   transition: all 0.2s ease;
-  border-radius: none;
+  border-radius: 0;
+  width: 220px;
 }
 
 .product_section .filters_menu .list-group-item:hover {
@@ -867,7 +868,7 @@ a:focus {
   width: 40px;
   height: 40px;
   border-radius: 100%;
-  background: #ffbe33;
+  background: #fff200;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -927,6 +928,62 @@ a:focus {
   font-weight: bold;
   color: #000;
   display: inline;
+}
+
+.product_detail_section h2,
+.product_detail_section h3 {
+  color: #334c9e;
+}
+
+.product_detail_section a {
+  font-weight: 500;
+}
+
+.product_detail_section table {
+  border-collapse: separate;
+  border-spacing: 0 6px; 
+}
+
+
+.product_detail_section table th,
+.product_detail_section table td {
+  padding: 14px 16px; 
+  vertical-align: middle; 
+  background-color: #fff; 
+  border-bottom: 1px solid #d0d0d0; 
+  font-size: 1rem;
+}
+
+
+.product_detail_section table th {
+  color: #444;
+  font-weight: 600;
+}
+
+.product_detail_section table tbody tr:not(:last-child) {
+  border-bottom: 1px solid #ccc;
+}
+
+
+.product_detail_section table tbody tr:hover {
+  background-color: #f1f3f5;
+  transition: background-color 0.2s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .product_detail_section table {
+    font-size: 0.95rem;
+  }
+
+  .product_detail_section table th,
+  .product_detail_section table td {
+    padding: 10px 12px;
+  }
+}
+
+.px-20-custom {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .slider-product .owl-nav {
