@@ -471,34 +471,52 @@ a:focus {
   flex-wrap: wrap;
   justify-content: center;
   list-style: none;
-  margin: 20px 0;
+  margin: 10px 0;
   padding: 0;
   gap: 10px;
 }
 
 .DuAn_section .filters_menu li {
+  position: relative;
   color: #000;
-  padding: 8px 18px;
-  font-size: 16px;
+  padding: 8px;
+  font-size: 18px;
   font-weight: 500;
-  border: 1px solid transparent;
-  border-radius: 10px;
-  transition: all 0.3s ease;
-  background-color: #f7f7f7;
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  overflow: hidden;
+}
+
+.DuAn_section .filters_menu li::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 3px;
+  background-color: #5fc8d9;
+  transition: width 0.8s ease;
+}
+
+.DuAn_section .filters_menu li:hover::after {
+  width: 100%;
 }
 
 .DuAn_section .filters_menu li:hover {
-  color: #5fc8d9;
-  background-color: #e6f7fb;
-  border-color: #5fc8d9;
-  cursor: pointer;
+  color: #ec2c25;
+}
+
+.DuAn_section .filters_menu li.active::after {
+  width: 100%;
+  background-color: #5fc8d9;
 }
 
 .DuAn_section .filters_menu li.active {
-  color: #fff;
-  background-color: #5fc8d9;
-  border: 1px solid #5fc8d9;
-  border-radius: 10px;
+  color: #ec2c25;
 }
 
 .DuAn_section .box {
@@ -676,34 +694,52 @@ a:focus {
   flex-wrap: wrap;
   justify-content: center;
   list-style: none;
-  margin: 20px 0;
+  margin: 10px 0;
   padding: 0;
   gap: 10px;
 }
 
 .product_section .filters_menu_home li {
+  position: relative;
   color: #000;
-  padding: 8px 18px;
-  font-size: 16px;
+  padding: 8px;
+  font-size: 18px;
   font-weight: 500;
-  border: 1px solid transparent;
-  border-radius: 10px;
-  transition: all 0.3s ease;
-  background-color: #f7f7f7;
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  overflow: hidden;
+}
+
+.product_section .filters_menu_home li::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 3px;
+  background-color: #5fc8d9;
+  transition: width 0.8s ease;
+}
+
+.product_section .filters_menu_home li:hover::after {
+  width: 100%;
 }
 
 .product_section .filters_menu_home li:hover {
-  color: #5fc8d9;
-  background-color: #e6f7fb;
-  border-color: #5fc8d9;
-  cursor: pointer;
+  color: #ec2c25;
+}
+
+.product_section .filters_menu_home li.active::after {
+  width: 100%;
+  background-color: #5fc8d9;
 }
 
 .product_section .filters_menu_home li.active {
-  color: #fff;
-  background-color: #5fc8d9;
-  border: 1px solid #5fc8d9;
-  border-radius: 10px;
+  color: #ec2c25;
 }
 
 .product_section .filters_menu {
@@ -981,17 +1017,19 @@ a:focus {
 
 .about_section .detail-box .heading_container h2 {
   text-transform: uppercase;
-  border-bottom: 3px solid #fff200;
   padding-bottom: 10px;
   color: #334c9e;
-  font-size: 25px;
 }
 
 .product_section .heading_container h2,
-.DuAn_section .heading_container h2,
+.DuAn_section .heading_container h2 {
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  color: #334c9e;
+}
+
 .client_section .heading_container h2 {
   text-transform: uppercase;
-  border-bottom: 3px solid #fff200;
   padding-bottom: 10px;
   color: #334c9e;
 }
