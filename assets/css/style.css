@@ -1928,4 +1928,44 @@ html {
 .blog_section .btn-box a:hover {
   filter: brightness(110%);
 }
+
+.product-detail {
+  padding: 60px 0;
+  background-color: #f8f9fa;
+}
+
+.product-detail__slider img {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.product-detail__info h1 {
+  font-size: 32px;
+  font-weight: 600;
+  color: #212529;
+}
+
+.product-detail__info h5 {
+  font-size: 20px;
+  color: #198754;
+  font-weight: 500;
+}
+
+.product-detail__info p,
+.product-detail__info ul {
+  font-size: 16px;
+  color: #495057;
+}
+
+.product-detail__info ul {
+  padding-left: 20px;
+}
+
+.product-detail__info ul li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+
 /*# sourceMappingURL=style.css.map */
