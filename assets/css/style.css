@@ -637,7 +637,7 @@ a:focus {
 }
 
 .DuAn_section .box .action-box .view-more i:hover {
-  filter: brightness(80%);
+  filter: brightness(110%);
 }
 
 .DuAn_section .box .action-box .view-more p {
@@ -961,7 +961,7 @@ a:focus {
 }
 
 .product_section .box .action-box .view-more i:hover {
-  filter: brightness(80%);
+  filter: brightness(110%);
 }
 
 .product_section .box .action-box .view-more p {
@@ -1095,23 +1095,21 @@ a:focus {
 
 .about_section .detail-box a {
   display: inline-block;
-  padding: 10px 25px;
-  background-color: #fff;
-  color: #000000;
-  border-radius: 10px;
+  padding: 10px 55px;
+  background-color: #334c9e;
+  color: #fff;
+  border-radius: 4px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  border: 2px solid #000000;
   margin-top: 15px;
-  font-weight: bold;
+  font-weight: 600;
+  font-size: 16px;
+  font-family: "IBM Plex Sans", sans-serif;
+  box-shadow: 0 4px 8px -4px rgba(148, 20, 20, 0.24);
 }
 
 .about_section .detail-box a:hover {
-  background-color: #5fc8d9;
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-  border: 2px solid #5fc8d9;
+  filter: brightness(110%);
 }
 
 .about_section .detail-box .heading_container h2 {
@@ -1178,21 +1176,24 @@ a:focus {
 .book_section .form_container button {
   margin-top: 15px;
   border: none;
-  text-transform: uppercase;
   display: inline-block;
-  padding: 10px 25px;
-  background-color: #5fc8d9;
+  padding: 10px 55px;
+  background-color: #334c9e;
   color: #fff;
-  border-radius: 10px;
+  border-radius: 4px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   border: none;
   margin: 15px auto 0;
   display: block;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  box-shadow: 0 4px 8px -4px rgba(148, 20, 20, 0.24);
 }
 
 .book_section .form_container button:hover {
-  filter: brightness(85%);
+  filter: brightness(110%);
 }
 
 .book_section .map_container {
@@ -1303,7 +1304,7 @@ a:focus {
 
 .client_section .owl-carousel .owl-nav .owl-prev:hover,
 .client_section .owl-carousel .owl-nav .owl-next:hover {
-  filter: brightness(85%);
+  filter: brightness(110%);
 }
 
 /* client section end */
@@ -1372,7 +1373,7 @@ a:focus {
 }
 
 .contact_section .form_container button:hover {
-  filter: brightness(85%);
+  filter: brightness(110%);
 }
 
 /* footer section*/
@@ -1662,4 +1663,269 @@ html {
   transform: rotate(180deg);
 }
 
+.Catalogue_section .box {
+  position: relative;
+  margin-top: 25px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.18);
+  display: flex;
+  flex-direction: column;
+}
+
+.Catalogue_section .box .img-box {
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 260px;
+  margin: -1px;
+}
+
+.Catalogue_section .box .img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.2s;
+}
+
+.Catalogue_section .box .detail-box {
+  padding: 32px 24px;
+  background-color: #fff;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.Catalogue_section .box .detail-box h5 {
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #000;
+  font-size: 24px;
+  font-family: "IBM Plex Sans", sans-serif;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.Catalogue_section .box .detail-box p {
+  font-size: 18px;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 400;
+  text-align: left;
+  color: #000;
+}
+
+.Catalogue_section .box .action-box {
+  background-color: #fff;
+  margin-top: 25px;
+  font-weight: 600;
+  font-size: 16px;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+.Catalogue_section .box .action-box .view-more {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: #007bff;
+  font-weight: 500;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.Catalogue_section .box .action-box .view-more i {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ec2c25;
+  color: #fff;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  font-size: 20px;
+  transition: background-color 0.3s ease;
+  flex-shrink: 0;
+}
+
+.Catalogue_section .box .action-box .view-more i:hover {
+  filter: brightness(110%);
+}
+
+.Catalogue_section .box .action-box .view-more p {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-size: 15px;
+  font-weight: bold;
+  color: #000;
+  display: inline;
+}
+
+.Catalogue_section .custom-col {
+  height: 550px;
+  max-width: 38%;
+  margin: 15px 5px;
+}
+
+.Catalogue_section .btn-box {
+  display: flex;
+  justify-content: center;
+  margin-top: 45px;
+}
+
+.Catalogue_section .btn-box a {
+  display: inline-block;
+  padding: 10px 55px;
+  background-color: #334c9e;
+  color: #ffffff;
+  border-radius: 4px;
+  transition: all 0.3s;
+  border: none;
+  box-shadow: 0 4px 8px -4px rgba(148, 20, 20, 0.24);
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 600;
+}
+
+.Catalogue_section .btn-box a:hover {
+  filter: brightness(110%);
+}
+
+.blog_section .box {
+  position: relative;
+  margin-top: 25px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.18);
+  display: flex;
+  flex-direction: column;
+}
+
+.blog_section .box .img-box {
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 260px;
+  margin: -1px;
+}
+
+.blog_section .box .img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.2s;
+}
+
+.blog_section .box .detail-box {
+  padding: 32px 24px;
+  background-color: #fff;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.blog_section .box .detail-box h5 {
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #000;
+  font-size: 24px;
+  font-family: "IBM Plex Sans", sans-serif;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.blog_section .box .detail-box p {
+  font-size: 18px;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 400;
+  text-align: left;
+  color: #000;
+}
+
+.blog_section .box .action-box {
+  background-color: #fff;
+  margin-top: 25px;
+  font-weight: 600;
+  font-size: 16px;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+.blog_section .box .action-box .view-more {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: #007bff;
+  font-weight: 500;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.blog_section .box .action-box .view-more i {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ec2c25;
+  color: #fff;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  font-size: 20px;
+  transition: background-color 0.3s ease;
+  flex-shrink: 0;
+}
+
+.blog_section .box .action-box .view-more i:hover {
+  filter: brightness(110%);
+}
+
+.blog_section .box .action-box .view-more p {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-size: 15px;
+  font-weight: bold;
+  color: #000;
+  display: inline;
+}
+
+.blog_section .custom-col {
+  height: 550px;
+  max-width: 38%;
+  margin: 15px 5px;
+}
+
+.blog_section .btn-box {
+  display: flex;
+  justify-content: center;
+  margin-top: 45px;
+}
+
+.blog_section .btn-box a {
+  display: inline-block;
+  padding: 10px 55px;
+  background-color: #334c9e;
+  color: #ffffff;
+  border-radius: 4px;
+  transition: all 0.3s;
+  border: none;
+  box-shadow: 0 4px 8px -4px rgba(148, 20, 20, 0.24);
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 600;
+}
+
+.blog_section .btn-box a:hover {
+  filter: brightness(110%);
+}
 /*# sourceMappingURL=style.css.map */

@@ -15,7 +15,7 @@
     <meta name="author" content="" />
     <link rel="shortcut icon" href="assets/images/logo_thuydong.png" type="" />
 
-    <title>Liên Hệ</title>
+    <title>Catalogue</title>
 
     <!-- bootstrap core css -->
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css" />
@@ -46,7 +46,7 @@
   </head>
 
   <body class="sub_page">
-    <!-- Header section -->
+    <!-- header section strats -->
     <header class="header_section">
       <div class="container">
         <nav class="navbar navbar-expand-lg custom_nav-container">
@@ -72,7 +72,7 @@
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mx-auto">
-              <li class="nav-item active">
+              <li class="nav-item">
                 <a class="nav-link" href="index.html">Trang Chủ </a>
               </li>
               <li class="nav-item">
@@ -142,7 +142,7 @@
                   <a class="dropdown-item" href="#">Catalogue 2</a>
                 </div>
               </li>
-              <li class="nav-item nav-dropdown dropdown">
+              <li class="nav-item nav-dropdown dropdown active">
                 <a
                   class="nav-link dropdown-toggle btn-nav"
                   href="blog.html"
@@ -168,61 +168,48 @@
       </div>
     </header>
 
-    <main class="content_wrapper">
-      <!-- book section -->
-      <section class="book_section layout_padding">
-        <div class="container">
-          <div class="heading_container">
-            <h2>Liên hệ với chúng tôi</h2>
-          </div>
-          <div class="row">
-            <div class="col-md-6">
-              <div class="form_container">
-                <form action="">
-                  <div>
-                    <input
-                      type="text"
-                      class="form-control"
-                      placeholder="Họ và Tên *"
-                    />
-                  </div>
-                  <div>
-                    <input
-                      type="email"
-                      class="form-control"
-                      placeholder="Email *"
-                    />
-                  </div>
-                  <div>
-                    <input
-                      type="text"
-                      class="form-control"
-                      placeholder="Số điện thoại"
-                    />
-                  </div>
-                  <div>
-                    <input
-                      type="note"
-                      class="form-control"
-                      placeholder="Nội dung liên hệ hoặc góp ý"
-                    />
-                  </div>
-                  <div class="btn_box">
-                    <button>Gửi Ngay</button>
-                  </div>
-                </form>
+    <!-- Blog section -->
+<section class="blog_section layout_padding">
+  <div class="container">
+    <div class="heading_container">
+      <hr style="border-top: 6px solid #334c9e; width: 24px; margin: 1px 0" />
+      <h2>Blog</h2>
+    </div>
+
+    <div class="blog-content">
+      <div class="row grid">
+        <div class="col-sm-6 col-lg-6 all blog1 custom-col">
+          <div class="box">
+            <div>
+              <div class="img-box">
+                <img src="assets/images/img_null.png" alt="Blog Image" />
               </div>
-            </div>
-            <div class="col-md-6">
-              <div class="map_container">
-                <div id="googleMap"></div>
+              <div class="detail-box">
+                <h5>Bài viết 1</h5>
+                <p>
+                  Tóm tắt nội dung bài viết ngắn gọn sẽ hiển thị ở đây, thu hút người dùng đọc tiếp...
+                </p>
+                <div class="action-box">
+                  <a href="blog-detail.html" class="view-more">
+                    <i class="fa-solid fa-arrow-right fa-xl"></i>
+                    <p>Đọc tiếp</p>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
-      <!-- end book section -->
-    </main>
+        <!-- Bạn có thể nhân thêm các block blog ở đây -->
+      </div>
+    </div>
+
+    <div class="btn-box">
+      <a href="">Xem thêm </a>
+    </div>
+  </div>
+</section>
+<!-- end Blog section -->
+
 
     <!-- Footer section -->
     <footer class="footer_section">
@@ -337,7 +324,7 @@
       </div>
     </footer>
 
-    <!-- jQuery -->
+    <!-- jQery -->
     <script src="libs/jquery-3.4.1.min.js"></script>
     <!-- popper js -->
     <script
@@ -357,5 +344,6 @@
     <script src="libs/custom.js"></script>
     <!-- Google Map -->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap"></script>
+    <!-- End Google Map -->
   </body>
 </html>
