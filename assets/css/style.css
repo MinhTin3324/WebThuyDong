@@ -1009,13 +1009,14 @@ a:focus {
 
 .service_section .box {
   position: relative;
+  margin-top: 25px;
   background-color: #ffffff;
   border-radius: 15px;
+  color: #ffffff;
   overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+  box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.18);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   height: 100%;
   font-family: "IBM Plex Sans", sans-serif;
 }
@@ -1025,7 +1026,7 @@ a:focus {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 215px;
+  height: 234px;
   margin: -1px;
 }
 
@@ -1037,37 +1038,41 @@ a:focus {
 }
 
 .service_section .box .detail-box {
-  padding: 25px;
+  padding: 32px 24px;
   background-color: #fff;
+  flex-grow: 1;
+  display: grid;
+  gap: 10px;
 }
 
 .service_section .box .detail-box h5 {
+  font-weight: 700;
+  color: #000;
   font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 20px;
-  line-height: 1.4;
-  max-height: 2.8em;
+  font-family: "IBM Plex Sans", sans-serif;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  word-break: break-word;
-  color: #000;
 }
 
 .service_section .box .detail-box p {
   font-size: 18px;
-  font-weight: 300;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 400;
   text-align: left;
   color: #000;
   display: -webkit-box;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
   overflow: hidden;
-  height: 60px;
+  text-overflow: ellipsis;
 }
 
 .service_section .box .action-box {
   background-color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 .service_section .box .action-box .view-more {
@@ -1088,9 +1093,9 @@ a:focus {
   background-color: #ec2c25;
   color: #fff;
   border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  font-size: 25px;
+  width: 60px;
+  height: 60px;
+  font-size: 20px;
   transition: background-color 0.3s ease;
   flex-shrink: 0;
 }
@@ -1137,7 +1142,6 @@ a:focus {
   height: 100%;
   object-fit: cover;
   transition: all 0.2s;
-  border-radius: 0 0 0 45px;
 }
 
 .project_section .box .detail-box {
@@ -2154,6 +2158,12 @@ html {
   filter: brightness(125%);
 }
 
+.Catalogue_section .row.grid {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
 .catalogue-content .row.grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -2289,6 +2299,12 @@ html {
   margin-top: 45px;
 }
 
+.blog_section .row.grid {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
 .blog_section .btn-box a {
   display: inline-block;
   padding: 10px 55px;
@@ -2306,13 +2322,6 @@ html {
   filter: brightness(125%);
 }
 
-.blog-content .row.grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
-  justify-content: center;
-}
-
 @media (max-width: 768px) {
   .blog-content .row.grid {
     grid-template-columns: 1fr;
@@ -2325,7 +2334,7 @@ html {
   }
 }
 
-.service_section .box {
+.our_services_section .box {
   position: relative;
   margin-top: 25px;
   background-color: transparent;
@@ -2336,7 +2345,7 @@ html {
   flex-direction: column;
 }
 
-.service_section .img-box {
+.our_services_section .img-box {
   position: relative;
   display: flex;
   justify-content: center;
@@ -2346,18 +2355,18 @@ html {
   border-radius: 15px;
 }
 
-.service_section .img-box img {
+.our_services_section .img-box img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: transform 0.3s ease;
 }
 
-.service_section .img-box:hover img {
+.our_services_section .img-box:hover img {
   transform: scale(1.05);
 }
 
-.service_section .overlay-title {
+.our_services_section .overlay-title {
   position: absolute;
   bottom: 0;
   text-align: center;
@@ -2381,7 +2390,7 @@ html {
     padding: 0 15px;
   }
 
-  .service_section .custom-col {
+  .our_services_section .custom-col {
     max-width: 100%;
     margin: 0 auto;
   }
