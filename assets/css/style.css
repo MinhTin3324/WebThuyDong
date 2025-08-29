@@ -619,7 +619,7 @@ a:focus {
   font-family: "IBM Plex Sans", sans-serif;
 }
 
-.DuAn_section .box .action-box .view-more {
+.DuAn_section .box .action-box {
   display: inline-flex;
   align-items: center;
   gap: 10px;
@@ -630,7 +630,7 @@ a:focus {
   transition: color 0.3s ease;
 }
 
-.DuAn_section .box .action-box .view-more i {
+.DuAn_section .box .action-box i {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -644,11 +644,11 @@ a:focus {
   flex-shrink: 0;
 }
 
-.DuAn_section .box .action-box .view-more i:hover {
+.DuAn_section .box .action-box i:hover {
   filter: brightness(125%);
 }
 
-.DuAn_section .box .action-box .view-more p {
+.DuAn_section .box .action-box p {
   margin: 0;
   padding: 0;
   line-height: 1;
@@ -1260,6 +1260,18 @@ a:focus {
   transition: background-color 0.2s ease-in-out;
 }
 
+.DuAn_detail_section .custom-video {
+  aspect-ratio: 16 / 9; /* giữ tỉ lệ */
+  width: 100%;
+  height: 380px; /* tăng chiều cao */
+}
+
+.DuAn_detail_section .gap-6 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* 32px, bạn chỉnh số tuỳ ý */
+}
+
 @media (max-width: 768px) {
   .DuAn_detail_section table {
     font-size: 0.95rem;
@@ -1270,7 +1282,6 @@ a:focus {
     padding: 10px 12px;
   }
 }
-
 .px-20-custom {
   padding-left: 20px;
   padding-right: 20px;
@@ -1481,7 +1492,7 @@ a:focus {
 }
 
 .social-section .social-icons i {
-  font-size: 80px;
+  font-size: 100px;
   color: #fff;
   transition: transform 0.3s;
 }
@@ -1738,6 +1749,7 @@ a:focus {
   color: #ffffff;
   padding-top: 120px;
   padding-bottom: 80px;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 .footer_section h4 {
@@ -1748,7 +1760,6 @@ a:focus {
 .footer_section .footer-logo {
   font-weight: 600;
   margin-bottom: 15px;
-  font-family: "Lexend Deca", sans-serif;
   text-transform: uppercase;
 }
 
@@ -2158,17 +2169,19 @@ html {
   filter: brightness(125%);
 }
 
-.Catalogue_section .row.grid {
-  max-width: 1170px;
-  margin: 0 auto;
-  padding: 20px;
+.Catalogue_section .catalogue-content {
+  max-width: 1200px;
 }
 
-.catalogue-content .row.grid {
+.Catalogue_section .catalogue-content .row {
+  margin-left: 90px;
+}
+
+.Catalogue_section .catalogue-content .grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
-  justify-content: center;
+  grid-template-columns: repeat(2, 1fr); /* 2 cột */
+  justify-items: center; /* căn giữa từng item */
+  gap: 20px;
 }
 
 @media (max-width: 768px) {
@@ -2298,11 +2311,19 @@ html {
   justify-content: center;
   margin-top: 45px;
 }
+.blog_section .blog-content {
+  max-width: 1200px;
+}
 
-.blog_section .row.grid {
-  max-width: 1170px;
-  margin: 0 auto;
-  padding: 20px;
+.blog_section .blog-content .row {
+  margin-left: 90px;
+}
+
+.blog_section .blog-content .grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  gap: 20px;
 }
 
 .blog_section .btn-box a {

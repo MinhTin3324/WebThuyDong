@@ -91,17 +91,22 @@
                   Sản phẩm
                 </a>
                 <div class="dropdown-menu" aria-labelledby="dropdownButton">
-                  <a class="dropdown-item" href="SanPham.html?filter=dien"
-                    >Sửa Điện</a
+                  <a class="dropdown-item" href="SanPham.html?filter=congnghiep"
+                    >Kho lạnh công nghiệp</a
                   >
-                  <a class="dropdown-item" href="SanPham.html?filter=nuoc"
-                    >Sửa Nước</a
+                  <a class="dropdown-item" href="SanPham.html?filter=mini"
+                    >Kho lạnh mini</a
                   >
-                  <a class="dropdown-item" href="SanPham.html?filter=maylanh"
-                    >Sửa Máy Lạnh</a
+                  <a class="dropdown-item" href="SanPham.html?filter=dacbiet"
+                    >Kho lạnh đặc biệt</a
                   >
-                  <a class="dropdown-item" href="SanPham.html?filter=dientu"
-                    >Sửa Điện Tử</a
+                  <a
+                    class="dropdown-item"
+                    href="SanPham.html?filter=hethonglanh"
+                    >Hệ thống lạnh công nghiệp</a
+                  >
+                  <a class="dropdown-item" href="SanPham.html?filter=spkhac"
+                    >Sản phẩm khác</a
                   >
                 </div>
               </li>
@@ -201,12 +206,19 @@
             <h4>Danh Mục Sản Phẩm</h4>
             <ul class="filters_menu list-group">
               <li class="list-group-item active" data-filter="*">Tất cả</li>
-              <li class="list-group-item" data-filter=".dien">Sửa Điện</li>
-              <li class="list-group-item" data-filter=".nuoc">Sửa Nước</li>
-              <li class="list-group-item" data-filter=".maylanh">
-                Sửa Máy Lạnh
+              <li class="list-group-item" data-filter=".congnghiep">
+                Kho lạnh công nghiệp
               </li>
-              <li class="list-group-item" data-filter=".dientu">Sửa Điện Tử</li>
+              <li class="list-group-item" data-filter=".mini">Kho lạnh mini</li>
+              <li class="list-group-item" data-filter=".dacbiet">
+                Kho lạnh đặc biệt
+              </li>
+              <li class="list-group-item" data-filter=".hethonglanh">
+                Hệ thống lạnh công nghiệp
+              </li>
+              <li class="list-group-item" data-filter=".spkhac">
+                Sản phẩm khác
+              </li>
             </ul>
           </div>
 
@@ -214,13 +226,89 @@
           <div class="col-md-9">
             <div class="filters-content">
               <div class="row grid">
-                <div class="col-sm-6 col-lg-4 all dien">
+                <div class="col-sm-6 col-lg-4 all congnghiep">
                   <a
                     href="product-detail.html"
                     class="box text-decoration-none text-dark"
                   >
                     <div class="img-box">
-                      <img src="assets/images/img_null.png" alt="Sửa điện 1" />
+                      <img
+                        src="assets/images/img_null.png"
+                        alt="Kho lạnh công nghiệp 1"
+                      />
+                    </div>
+                    <div class="detail-box">
+                      <h5>Kho lạnh công nghiệp 1</h5>
+                      <p>
+                        Veniam debitis quaerat officiis quasi cupiditate quo...
+                      </p>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-sm-6 col-lg-4 all mini">
+                  <a
+                    href="product-detail.html"
+                    class="box text-decoration-none text-dark"
+                  >
+                    <div class="img-box">
+                      <img
+                        src="assets/images/img_null.png"
+                        alt="Kho lạnh mini 1"
+                      />
+                    </div>
+                    <div class="detail-box">
+                      <h5>Kho lạnh mini 1</h5>
+                      <p>
+                        Veniam debitis quaerat officiis quasi cupiditate quo...
+                      </p>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-sm-6 col-lg-4 all dacbiet">
+                  <a
+                    href="product-detail.html"
+                    class="box text-decoration-none text-dark"
+                  >
+                    <div class="img-box">
+                      <img
+                        src="assets/images/img_null.png"
+                        alt="Kho lạnh đặc biệt 1"
+                      />
+                    </div>
+                    <div class="detail-box">
+                      <h5>Kho lạnh đặc biệt 1</h5>
+                      <p>
+                        Veniam debitis quaerat officiis quasi cupiditate quo...
+                      </p>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-sm-6 col-lg-4 all hethonglanh">
+                  <a
+                    href="product-detail.html"
+                    class="box text-decoration-none text-dark"
+                  >
+                    <div class="img-box">
+                      <img
+                        src="assets/images/img_null.png"
+                        alt="Hệ thống lạnh công nghiệp 1"
+                      />
+                    </div>
+                    <div class="detail-box">
+                      <h5>Hệ thống lạnh công nghiệp 1</h5>
+                      <p>
+                        Veniam debitis quaerat officiis quasi cupiditate quo...
+                      </p>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-sm-6 col-lg-4 all spkhac">
+                  <a
+                    href="product-detail.html"
+                    class="box text-decoration-none text-dark"
+                  >
+                    <div class="img-box">
+                      <img src="assets/images/img_null.png" alt="Sửa điện 2" />
                     </div>
                     <div class="detail-box">
                       <h5>Sửa điện 1</h5>
@@ -230,77 +318,7 @@
                     </div>
                   </a>
                 </div>
-                <div class="col-sm-6 col-lg-4 all nuoc">
-                  <a
-                    href="product-detail.html"
-                    class="box text-decoration-none text-dark"
-                  >
-                    <div class="img-box">
-                      <img src="assets/images/img_null.png" alt="Sửa nước 1" />
-                    </div>
-                    <div class="detail-box">
-                      <h5>Sửa nước 1</h5>
-                      <p>
-                        Veniam debitis quaerat officiis quasi cupiditate quo...
-                      </p>
-                    </div>
-                  </a>
-                </div>
-                <div class="col-sm-6 col-lg-4 all maylanh">
-                  <a
-                    href="product-detail.html"
-                    class="box text-decoration-none text-dark"
-                  >
-                    <div class="img-box">
-                      <img
-                        src="assets/images/img_null.png"
-                        alt="Sửa máy lạnh 1"
-                      />
-                    </div>
-                    <div class="detail-box">
-                      <h5>Sửa máy lạnh 1</h5>
-                      <p>
-                        Veniam debitis quaerat officiis quasi cupiditate quo...
-                      </p>
-                    </div>
-                  </a>
-                </div>
-                <div class="col-sm-6 col-lg-4 all dientu">
-                  <a
-                    href="product-detail.html"
-                    class="box text-decoration-none text-dark"
-                  >
-                    <div class="img-box">
-                      <img
-                        src="assets/images/img_null.png"
-                        alt="Sửa điện tử 1"
-                      />
-                    </div>
-                    <div class="detail-box">
-                      <h5>Sửa điện tử 1</h5>
-                      <p>
-                        Veniam debitis quaerat officiis quasi cupiditate quo...
-                      </p>
-                    </div>
-                  </a>
-                </div>
-                <div class="col-sm-6 col-lg-4 all dien">
-                  <a
-                    href="product-detail.html"
-                    class="box text-decoration-none text-dark"
-                  >
-                    <div class="img-box">
-                      <img src="assets/images/img_null.png" alt="Sửa điện 2" />
-                    </div>
-                    <div class="detail-box">
-                      <h5>Sửa điện 2</h5>
-                      <p>
-                        Veniam debitis quaerat officiis quasi cupiditate quo...
-                      </p>
-                    </div>
-                  </a>
-                </div>
-                <div class="col-sm-6 col-lg-4 all maylanh">
+                <div class="col-sm-6 col-lg-4 all congnghiep">
                   <a
                     href="product-detail.html"
                     class="box text-decoration-none text-dark"
@@ -312,14 +330,14 @@
                       />
                     </div>
                     <div class="detail-box">
-                      <h5>Rửa máy lạnh 1</h5>
+                      <h5>Kho lạnh công nghiệp 2</h5>
                       <p>
                         Veniam debitis quaerat officiis quasi cupiditate quo...
                       </p>
                     </div>
                   </a>
                 </div>
-                <div class="col-sm-6 col-lg-4 all dientu">
+                <div class="col-sm-6 col-lg-4 all mini">
                   <a
                     href="product-detail.html"
                     class="box text-decoration-none text-dark"
@@ -327,18 +345,18 @@
                     <div class="img-box">
                       <img
                         src="assets/images/img_null.png"
-                        alt="Thay điện tử 1"
+                        alt="Kho lạnh mini 2"
                       />
                     </div>
                     <div class="detail-box">
-                      <h5>Thay điện tử 1</h5>
+                      <h5>Kho lạnh mini 2</h5>
                       <p>
                         Veniam debitis quaerat officiis quasi cupiditate quo...
                       </p>
                     </div>
                   </a>
                 </div>
-                <div class="col-sm-6 col-lg-4 all nuoc">
+                <div class="col-sm-6 col-lg-4 all dacbiet">
                   <a
                     href="product-detail.html"
                     class="box text-decoration-none text-dark"
@@ -346,18 +364,18 @@
                     <div class="img-box">
                       <img
                         src="assets/images/img_null.png"
-                        alt="Lắp ống nước 1"
+                        alt="Kho lạnh đặc biệt 2"
                       />
                     </div>
                     <div class="detail-box">
-                      <h5>Lắp ống nước 1</h5>
+                      <h5>Kho lạnh đặc biệt 2</h5>
                       <p>
                         Veniam debitis quaerat officiis quasi cupiditate quo...
                       </p>
                     </div>
                   </a>
                 </div>
-                <div class="col-sm-6 col-lg-4 all dientu">
+                <div class="col-sm-6 col-lg-4 all hethonglanh">
                   <a
                     href="product-detail.html"
                     class="box text-decoration-none text-dark"
@@ -365,11 +383,11 @@
                     <div class="img-box">
                       <img
                         src="assets/images/img_null.png"
-                        alt="Thay phụ kiện điện tử 1"
+                        alt="Hệ thống lạnh công nghiệp 2"
                       />
                     </div>
                     <div class="detail-box">
-                      <h5>Thay phụ kiện điện tử 1</h5>
+                      <h5>Hệ thống lạnh công nghiệp 2</h5>
                       <p>
                         Veniam debitis quaerat officiis quasi cupiditate quo...
                       </p>
